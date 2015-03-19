@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+HowManyObjs	.\HowMany.cpp	/^	HowManyObjs() {$/;"	f	class:HowManyObjs
+HowManyObjs	.\HowMany.cpp	/^class HowManyObjs {$/;"	c	file:
+X	.\const_class.cpp	/^class X{};$/;"	c	file:
+bufsize	.\HowMany2.cpp	/^	enum {bufsize = 30};$/;"	e	enum:howmany2::__anon1	file:
+f	.\HowMany.cpp	/^HowManyObjs f(HowManyObjs x) {$/;"	f
+f	.\HowMany2.cpp	/^howmany2 f(howmany2 x) {$/;"	f
+f	.\const_class.cpp	/^X f() {return X();}$/;"	f
+g1	.\const_class.cpp	/^void g1(X&){$/;"	f
+g2	.\const_class.cpp	/^void g2(const X&){$/;"	f
+howmany2	.\HowMany2.cpp	/^	howmany2(const char* ID = 0) {$/;"	f	class:howmany2
+howmany2	.\HowMany2.cpp	/^	howmany2(const howmany2& h) {$/;"	f	class:howmany2
+howmany2	.\HowMany2.cpp	/^class howmany2{$/;"	c	file:
+id	.\HowMany2.cpp	/^	char id[bufsize]; \/\/ Object indentifier$/;"	m	class:howmany2	file:
+main	.\HowMany.cpp	/^main(){$/;"	f
+main	.\HowMany2.cpp	/^main() {$/;"	f
+main	.\ScopeStaticInit.cpp	/^main() {$/;"	f
+main	.\const_class.cpp	/^main(){$/;"	f
+main	.\strstream.cpp	/^main()$/;"	f
+obj	.\HowMany.cpp	/^	int obj;$/;"	m	class:HowManyObjs	file:
+object_count	.\HowMany.cpp	/^	static int object_count;$/;"	m	class:HowManyObjs	file:
+object_count	.\HowMany.cpp	/^int HowManyObjs::object_count = 0;$/;"	m	class:HowManyObjs	file:
+object_count	.\HowMany2.cpp	/^	static int object_count;$/;"	m	class:howmany2	file:
+object_count	.\HowMany2.cpp	/^int howmany2::object_count = 0;$/;"	m	class:howmany2	file:
+print	.\HowMany.cpp	/^	static void print(const char* msg = 0) {$/;"	f	class:HowManyObjs
+print	.\HowMany2.cpp	/^	void print(const char* msg = 0) const {$/;"	f	class:howmany2
+print	.\ScopeStaticInit.cpp	/^	void print() const{$/;"	f	class:withStatic
+withStatic	.\ScopeStaticInit.cpp	/^class withStatic {$/;"	c	file:
+x	.\ScopeStaticInit.cpp	/^	static int x;$/;"	m	class:withStatic	file:
+x	.\ScopeStaticInit.cpp	/^int withStatic::x = 1;$/;"	m	class:withStatic	file:
+x	.\ScopeStaticInit.cpp	/^int x = 100;$/;"	v
+y	.\ScopeStaticInit.cpp	/^	static int y;$/;"	m	class:withStatic	file:
+y	.\ScopeStaticInit.cpp	/^int withStatic::y = x+1;$/;"	m	class:withStatic	file:
+~HowManyObjs	.\HowMany.cpp	/^	~HowManyObjs() {$/;"	f	class:HowManyObjs
+~howmany2	.\HowMany2.cpp	/^	~howmany2() {$/;"	f	class:howmany2
