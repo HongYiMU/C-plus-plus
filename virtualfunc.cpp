@@ -7,26 +7,30 @@
 #include <iostream>
 using namespace std;
 
-class A{
-	public :
-		virtual void print(){
-			cout << "This is A" << endl;
-		}
-};
-
-class B{
+class Base{
 	public :
 		void print(){
-			cout << "This is B" << endl;
+	//	virtual void print(){	
+		cout << "This is Base" << endl;
 		}
 };
-
+class Son:public Base{
+	public :
+		void print(){
+			cout << "This is Son" << endl;
+		}
+};
+void test(Base& test)
+{
+	test.print();
+}
 int main(void){
-	A a;
-	B b;
-	A* p1 = &a;
-	A* p2 = (A*)&b;
-	p1->print();
-	p2->print();
+	Base base;
+	Son son;
+	base.print();
+	son.print();
+	test(base);
+	test(son);
+	
 	return 0;
 }
